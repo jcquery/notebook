@@ -6,6 +6,7 @@ git config -- global user.email "EMAIL"
 git la
 
 #like git log, but more condensed
+# also shows the history of the local and remote branches
 git ll
 
 #info about the commit area
@@ -24,5 +25,22 @@ git add notes.txt
 git init
 
 #creates a special file that acts as a bouncer to the staging area
+
 #paths to be ignored are line-separated
 touch .gitignore
+
+#move/rename for local machine that also updates the staging area
+git mv
+
+#push the current branch (master) to a branch (also master) on the origin remote
+#the first master refers to the local branch
+#the second master refers to the remote branch
+# the -u flag sets the upstream (connects the two branches)
+push -u origin master
+
+# add a remote called origin (key) that refers to a URL (value)
+# allows pushing and pulling commits to and from the remote
+git remote add origin URL
+
+#once the local master branch is connected to a remote branch,
+#the remote and branch names don't need to be specified
