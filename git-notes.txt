@@ -1,0 +1,28 @@
+#adds a global signature for the environment
+git config -- global user.name "NAME"
+git config -- global user.email "EMAIL"
+
+#longer version of git log that shows info about the commit area
+git la
+
+#like git log, but more condensed
+git ll
+
+#info about the commit area
+git log
+
+#commits staged files with a message; clears the staging area
+git commit -m 'Initial commit'
+
+#info about the staging area
+git status
+
+#adds a file to the staging area
+git add notes.txt
+
+#initializes a repository in the working directory
+git init
+
+#creates a special file that acts as a bouncer to the staging area
+#paths to be ignored are line-separated
+touch .gitignore
