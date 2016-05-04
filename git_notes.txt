@@ -32,6 +32,10 @@ touch .gitignore
 #move/rename for local machine that also updates the staging area
 git mv
 
+#fetches new commits from the remote branch and merge them into the local
+#master branch
+git pull [REMOTE] [BRANCH]
+
 #push the current branch (master) to a branch (also master) on the origin remote
 #the first master refers to the local branch
 #the second master refers to the remote branch
